@@ -18,6 +18,7 @@ namespace FrameVioti.StepDefinitions
 
         private LoginPage loginPage = new LoginPage();
         private ProdutosPage prodPage = new ProdutosPage();
+        private AssertPage assertPage = new AssertPage();
         private PrintaTela print = new PrintaTela();
 
 
@@ -46,11 +47,7 @@ namespace FrameVioti.StepDefinitions
         {
 
             Thread.Sleep(3000);
-
-            string confirmarInicio = DriverFactory.GetDriver().FindElement(By.XPath("//div[contains(text(),'Swag Labs')]")).Text;
-            Assert.AreEqual("Swag Labs", confirmarInicio);
-
-            Console.WriteLine("Usuário Esperado: Swag Labs e veio " + confirmarInicio);
+            assertPage.ConfirmarInicio();
 
             print.TakeScreenshot();
 
@@ -72,11 +69,7 @@ namespace FrameVioti.StepDefinitions
         {
 
             Thread.Sleep(2000);
-            string algoDeuErrado = DriverFactory.GetDriver().FindElement(By.XPath("//h3[contains(text(),'Epic sadface: Username and password do not match any user in this service')]")).Text;
-            Assert.AreEqual("Epic sadface: Username and password do not match any user in this service", algoDeuErrado);
-
-            Console.WriteLine("Esperado:Epic sadface: Username and password do not match any user in this service" + algoDeuErrado);
-
+            assertPage.GetAlgoDeuErrado();
             print.TakeScreenshot();
 
             DriverFactory.KillDriver();
@@ -122,11 +115,8 @@ namespace FrameVioti.StepDefinitions
         public void ThenOSistemaApresentaMensagemThankYouForYourOrder()
         {
             Thread.Sleep(2000);
-            string msgSucesso = DriverFactory.GetDriver().FindElement(By.XPath("//h2[@class='complete-header']")).Text;
-            Assert.AreEqual("Thank you for your order!", msgSucesso);
-
-            Console.WriteLine("Esperado: Thank you for your order! e veio" + msgSucesso);
-
+            assertPage.VerificarMensagemSucesso();
+               
             print.TakeScreenshot();
 
             DriverFactory.KillDriver();
