@@ -10,7 +10,7 @@ namespace FrameVioti.Elementos
     public class AssertElementos
     {
 
-        private By algoDeuErrado = By.XPath("//input[@id='password']");
+        private By algoDeuErrado = By.XPath("//h3[contains(text(),'Epic sadface: Username and password do not match any user in this service')]");
         private By msgSucesso = By.XPath("//h2[@class='complete-header']");
         private By confirmarInicio = By.XPath("//div[contains(text(),'Swag Labs')]");
 

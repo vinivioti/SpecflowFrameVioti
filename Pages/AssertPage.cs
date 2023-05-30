@@ -15,6 +15,7 @@ namespace FrameVioti.Pages
     {
         public void VerificarMensagemDeErro()
         {
+            Thread.Sleep(2000);
             string algoDeuErrado = DriverFactory.GetDriver().FindElement(GetAlgoDeuErrado()).Text;
             Assert.AreEqual("Epic sadface: Username and password do not match any user in this service", algoDeuErrado);
 

@@ -205,3 +205,6 @@ C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\obj\Debug\net6.0\refint\Fra
 C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\obj\Debug\net6.0\FrameVioti.pdb
 C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\obj\Debug\net6.0\FrameVioti.genruntimeconfig.cache
 C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\obj\Debug\net6.0\ref\FrameVioti.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\HtmlAgilityPack.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\RazorEngine.dll

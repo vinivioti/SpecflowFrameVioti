@@ -81,6 +81,23 @@
           "lib/netstandard2.0/ExtentReports.dll": {}
         }
       },
+      "ExtentReports.signed/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9.5",
+          "MongoDB.Bson.signed": "2.3.0.157",
+          "MongoDB.Driver.Core.signed": "2.3.0.157",
+          "MongoDB.Driver.signed": "2.3.0.157",
+          "Newtonsoft.Json": "9.0.0",
+          "RazorEngine": "3.9.0"
+        },
+        "compile": {
+          "lib/ExtentReports.dll": {}
+        },
+        "runtime": {
+          "lib/ExtentReports.dll": {}
+        }
+      },
       "FluentAssertions/6.11.0": {
         "type": "package",
         "dependencies": {
@@ -110,6 +127,19 @@
           }
         }
       },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MathNet.Numerics.Signed/4.15.0": {
         "type": "package",
         "compile": {
@@ -119,6 +149,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/MathNet.Numerics.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
             "related": ".xml"
           }
         }
@@ -1617,6 +1660,26 @@
           }
         }
       },
+      "MongoDB.Bson.signed/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Diagnostics.Process": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Reflection.Emit.Lightweight": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/MongoDB.Bson.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/MongoDB.Bson.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MongoDB.Driver/2.10.0": {
         "type": "package",
         "dependencies": {
@@ -1661,6 +1724,47 @@
         },
         "runtime": {
           "lib/netstandard1.5/MongoDB.Driver.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MongoDB.Driver.Core.signed/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Bson.signed": "2.4.0",
+          "NETStandard.Library": "1.6.0",
+          "System.Collections.Specialized": "4.0.1",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Security": "4.0.0",
+          "System.Security.SecureString": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.5/MongoDB.Driver.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/MongoDB.Driver.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MongoDB.Driver.signed/2.4.0": {
+        "type": "package",
+        "dependencies": {
+          "MongoDB.Bson.signed": "2.4.0",
+          "MongoDB.Driver.Core.signed": "2.4.0",
+          "NETStandard.Library": "1.6.0",
+          "System.Linq.Queryable": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/MongoDB.Driver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/MongoDB.Driver.dll": {
             "related": ".xml"
           }
         }
@@ -1798,6 +1902,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "RazorEngine/3.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.0.0"
+        },
+        "compile": {
+          "lib/net45/RazorEngine.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/RazorEngine.dll": {
             "related": ".xml"
           }
         }
@@ -4171,6 +4291,20 @@
         "lib/netstandard2.0/ExtentReports.dll"
       ]
     },
+    "ExtentReports.signed/3.1.3": {
+      "sha512": "0zUQF5c0BA/5yVv5GvOjBkicB0Br8ctHUy1BNGWzr3QbBAShMzqUiNC36gzh440bE1X6JZbL5l1m+NMYKR0kzg==",
+      "type": "package",
+      "path": "extentreports.signed/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/extent-config.xml",
+        "content/license",
+        "extentreports.signed.3.1.3.nupkg.sha512",
+        "extentreports.signed.nuspec",
+        "lib/ExtentReports.dll"
+      ]
+    },
     "FluentAssertions/6.11.0": {
       "sha512": "aBaagwdNtVKkug1F3imGXUlmoBd8ZUZX8oQ5niThaJhF79SpESe1Gzq7OFuZkQdKD5Pa4Mone+jrbas873AT4g==",
       "type": "package",
@@ -4217,6 +4351,42 @@
         "lib/netstandard2.0/Gherkin.xml"
       ]
     },
+    "HtmlAgilityPack/1.4.9.5": {
+      "sha512": "zk7zsIaPkyBvYoVDsnx52SbKtvcmo2bcgNBshhSG++RnHMYoh0dqxRuQSznY+w6luiqR35OiHTk1L73SUAGKLw==",
+      "type": "package",
+      "path": "htmlagilitypack/1.4.9.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "HAPIcon.png",
+        "htmlagilitypack.1.4.9.5.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net20/HtmlAgilityPack.dll",
+        "lib/Net20/HtmlAgilityPack.pdb",
+        "lib/Net20/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.pri",
+        "lib/NetCore45/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/sl5/HtmlAgilityPack.XML",
+        "lib/sl5/HtmlAgilityPack.dll",
+        "lib/sl5/HtmlAgilityPack.pdb",
+        "readme.txt"
+      ]
+    },
     "MathNet.Numerics.Signed/4.15.0": {
       "sha512": "LFjukMRatkg9dgRM7U/gM4uKgaWAX7E0lt3fsVDTPdtBIVuh7uPlksDie290br1/tv1a4Ar/Bz9ywCPSL8PhHg==",
       "type": "package",
@@ -4235,6 +4405,19 @@
         "lib/netstandard2.0/MathNet.Numerics.xml",
         "mathnet.numerics.signed.4.15.0.nupkg.sha512",
         "mathnet.numerics.signed.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.0.0": {
+      "sha512": "mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
+      "type": "package",
+      "path": "microsoft.aspnet.razor/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "microsoft.aspnet.razor.3.0.0.nupkg.sha512",
+        "microsoft.aspnet.razor.nuspec"
       ]
     },
     "Microsoft.AspNetCore/2.2.0": {
@@ -5540,6 +5723,22 @@
         "mongodb.bson.nuspec"
       ]
     },
+    "MongoDB.Bson.signed/2.4.0": {
+      "sha512": "baKnLTBW1k4ZI/pdL8lgLM0w04EfBeqLk9/tgKcs2B3Uw9SiRulmLQwaJVSuxavkshLO0hLGnwsiIW8Oh1UCtw==",
+      "type": "package",
+      "path": "mongodb.bson.signed/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/net45/MongoDB.Bson.XML",
+        "lib/net45/MongoDB.Bson.dll",
+        "lib/netstandard1.5/MongoDB.Bson.dll",
+        "lib/netstandard1.5/MongoDB.Bson.xml",
+        "mongodb.bson.signed.2.4.0.nupkg.sha512",
+        "mongodb.bson.signed.nuspec"
+      ]
+    },
     "MongoDB.Driver/2.10.0": {
       "sha512": "YyQSFf8hl/larcQCpN652Q6aQ3z9Xn1EB1JFrIZc84xDy4oiqFbDbWIv+DHIat2qTfQNDeeXc9laCTTx2TVvMg==",
       "type": "package",
@@ -5570,6 +5769,38 @@
         "lib/netstandard1.5/MongoDB.Driver.Core.xml",
         "mongodb.driver.core.2.10.0.nupkg.sha512",
         "mongodb.driver.core.nuspec"
+      ]
+    },
+    "MongoDB.Driver.Core.signed/2.4.0": {
+      "sha512": "kBT6rNuoea3zjDINzTBmj0Nn9jhg+uup7TgsrxI6qR6frvMlNc1RhRouNGke3C3iRem8c6TKIEPLRS/2ajwFBg==",
+      "type": "package",
+      "path": "mongodb.driver.core.signed/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/net45/MongoDB.Driver.Core.XML",
+        "lib/net45/MongoDB.Driver.Core.dll",
+        "lib/netstandard1.5/MongoDB.Driver.Core.dll",
+        "lib/netstandard1.5/MongoDB.Driver.Core.xml",
+        "mongodb.driver.core.signed.2.4.0.nupkg.sha512",
+        "mongodb.driver.core.signed.nuspec"
+      ]
+    },
+    "MongoDB.Driver.signed/2.4.0": {
+      "sha512": "IAC+P6GLqnOUGR1fZ0oOWiRANFAOVz3d2B3t3exJGP8yW18IKpNlH05w/q4AHnSC8cX2NO8VyEVG2R8i7Iy9DA==",
+      "type": "package",
+      "path": "mongodb.driver.signed/2.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.rtf",
+        "lib/net45/MongoDB.Driver.XML",
+        "lib/net45/MongoDB.Driver.dll",
+        "lib/netstandard1.5/MongoDB.Driver.dll",
+        "lib/netstandard1.5/MongoDB.Driver.xml",
+        "mongodb.driver.signed.2.4.0.nupkg.sha512",
+        "mongodb.driver.signed.nuspec"
       ]
     },
     "MongoDB.Libmongocrypt/1.0.0": {
@@ -5892,6 +6123,22 @@
         "lib/netstandard2.0/BouncyCastle.Crypto.xml",
         "portable.bouncycastle.1.9.0.nupkg.sha512",
         "portable.bouncycastle.nuspec"
+      ]
+    },
+    "RazorEngine/3.9.0": {
+      "sha512": "J/Y0wkyeilYPNFcW9xtGpRbFgNg0v6kDS/5Lq9MiI31bQxHBXiaKcOYrGK6NrAeX/OJuUsjXhcRINggSfwvlMg==",
+      "type": "package",
+      "path": "razorengine/3.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net40/RazorEngine.dll",
+        "lib/net40/RazorEngine.xml",
+        "lib/net45/RazorEngine.dll",
+        "lib/net45/RazorEngine.xml",
+        "razorengine.3.9.0.nupkg.sha512",
+        "razorengine.nuspec"
       ]
     },
     "RazorEngine.NetCore/2.2.6": {
@@ -11288,6 +11535,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "ExtentReports >= 4.1.0",
+      "ExtentReports.signed >= 3.1.3",
       "FluentAssertions >= 6.11.0",
       "Microsoft.NET.Test.Sdk >= 17.6.0",
       "NPOI >= 2.6.0",
@@ -11347,6 +11595,10 @@
             "target": "Package",
             "version": "[4.1.0, )"
           },
+          "ExtentReports.signed": {
+            "target": "Package",
+            "version": "[3.1.3, )"
+          },
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.11.0, )"
@@ -11403,5 +11655,87 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ExtentReports.signed 3.1.3 depende de MongoDB.Bson.signed (>= 2.3.0.157), mas MongoDB.Bson.signed 2.3.0.157 não foi encontrado. A melhor correspondência aproximada de MongoDB.Bson.signed 2.4.0 foi resolvida.",
+      "libraryId": "MongoDB.Bson.signed",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ExtentReports.signed 3.1.3 depende de MongoDB.Driver.Core.signed (>= 2.3.0.157), mas MongoDB.Driver.Core.signed 2.3.0.157 não foi encontrado. A melhor correspondência aproximada de MongoDB.Driver.Core.signed 2.4.0 foi resolvida.",
+      "libraryId": "MongoDB.Driver.Core.signed",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ExtentReports.signed 3.1.3 depende de MongoDB.Driver.signed (>= 2.3.0.157), mas MongoDB.Driver.signed 2.3.0.157 não foi encontrado. A melhor correspondência aproximada de MongoDB.Driver.signed 2.4.0 foi resolvida.",
+      "libraryId": "MongoDB.Driver.signed",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "ExtentReports.signed 3.1.3 depende de Newtonsoft.Json (>= 9.0.0), mas Newtonsoft.Json 9.0.0 não foi encontrado. A melhor correspondência aproximada de Newtonsoft.Json 9.0.1 foi resolvida.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'ExtentReports.signed 3.1.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "ExtentReports.signed",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'HtmlAgilityPack 1.4.9.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "HtmlAgilityPack",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Microsoft.AspNet.Razor 3.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Microsoft.AspNet.Razor",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'RazorEngine 3.9.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "RazorEngine",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

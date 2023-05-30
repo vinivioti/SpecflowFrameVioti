@@ -23,7 +23,7 @@ namespace FrameVioti.GerenciadorDriver
             {
                 new DriverManager().SetUpDriver(new ChromeConfig());
                 ChromeOptions options = new ChromeOptions();
-                //options.AddArgument("--headless"); // Adiciona o argumento para modo headless (sem abrir a tela)
+               // options.AddArgument("--headless"); // Adiciona o argumento para modo headless (sem abrir a tela)
                 driver = new ChromeDriver(options);
                 driver.Manage().Window.Maximize();
 

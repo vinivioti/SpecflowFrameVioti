@@ -68,8 +68,8 @@ namespace FrameVioti.StepDefinitions
         public void ThenOSistemaNaoLogaEApresentaMensagemAmigavel()
         {
 
-            Thread.Sleep(2000);
-            assertPage.GetAlgoDeuErrado();
+            assertPage.VerificarMensagemDeErro();
+          
             print.TakeScreenshot();
 
             DriverFactory.KillDriver();
@@ -115,6 +115,7 @@ namespace FrameVioti.StepDefinitions
         public void ThenOSistemaApresentaMensagemThankYouForYourOrder()
         {
             Thread.Sleep(2000);
+
             assertPage.VerificarMensagemSucesso();
                
             print.TakeScreenshot();

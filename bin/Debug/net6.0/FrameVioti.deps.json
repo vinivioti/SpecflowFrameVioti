@@ -9,6 +9,7 @@
       "FrameVioti/1.0.0": {
         "dependencies": {
           "ExtentReports": "4.1.0",
+          "ExtentReports.signed": "3.1.3",
           "FluentAssertions": "6.11.0",
           "Microsoft.NET.Test.Sdk": "17.6.0",
           "NPOI": "2.6.0",
@@ -78,6 +79,16 @@
           }
         }
       },
+      "ExtentReports.signed/3.1.3": {
+        "dependencies": {
+          "HtmlAgilityPack": "1.4.9.5",
+          "MongoDB.Bson.signed": "2.4.0",
+          "MongoDB.Driver.Core.signed": "2.4.0",
+          "MongoDB.Driver.signed": "2.4.0",
+          "Newtonsoft.Json": "13.0.1",
+          "RazorEngine": "3.9.0"
+        }
+      },
       "FluentAssertions/6.11.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -97,11 +108,27 @@
           }
         }
       },
+      "HtmlAgilityPack/1.4.9.5": {
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.4.9.5",
+            "fileVersion": "1.4.9.5"
+          }
+        }
+      },
       "MathNet.Numerics.Signed/4.15.0": {
         "runtime": {
           "lib/netstandard2.0/MathNet.Numerics.dll": {
             "assemblyVersion": "4.15.0.0",
             "fileVersion": "4.15.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNet.Razor/3.0.0": {
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.11001.0"
           }
         }
       },
@@ -1223,6 +1250,15 @@
           }
         }
       },
+      "MongoDB.Bson.signed/2.4.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Diagnostics.Process": "4.1.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0"
+        }
+      },
       "MongoDB.Driver/2.10.0": {
         "dependencies": {
           "MongoDB.Bson": "2.10.0",
@@ -1259,6 +1295,25 @@
             "assemblyVersion": "2.10.0.0",
             "fileVersion": "2.10.0.0"
           }
+        }
+      },
+      "MongoDB.Driver.Core.signed/2.4.0": {
+        "dependencies": {
+          "MongoDB.Bson.signed": "2.4.0",
+          "NETStandard.Library": "2.0.0",
+          "System.Collections.Specialized": "4.0.1",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.2",
+          "System.Security.SecureString": "4.0.0"
+        }
+      },
+      "MongoDB.Driver.signed/2.4.0": {
+        "dependencies": {
+          "MongoDB.Bson.signed": "2.4.0",
+          "MongoDB.Driver.Core.signed": "2.4.0",
+          "NETStandard.Library": "2.0.0",
+          "System.Linq.Queryable": "4.0.1"
         }
       },
       "MongoDB.Libmongocrypt/1.0.0": {
@@ -1342,6 +1397,17 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
             "assemblyVersion": "1.9.0.0",
             "fileVersion": "1.9.0.1"
+          }
+        }
+      },
+      "RazorEngine/3.9.0": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "3.0.0"
+        },
+        "runtime": {
+          "lib/net45/RazorEngine.dll": {
+            "assemblyVersion": "3.9.0.0",
+            "fileVersion": "3.9.0.0"
           }
         }
       },
@@ -2547,6 +2613,13 @@
       "path": "extentreports/4.1.0",
       "hashPath": "extentreports.4.1.0.nupkg.sha512"
     },
+    "ExtentReports.signed/3.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0zUQF5c0BA/5yVv5GvOjBkicB0Br8ctHUy1BNGWzr3QbBAShMzqUiNC36gzh440bE1X6JZbL5l1m+NMYKR0kzg==",
+      "path": "extentreports.signed/3.1.3",
+      "hashPath": "extentreports.signed.3.1.3.nupkg.sha512"
+    },
     "FluentAssertions/6.11.0": {
       "type": "package",
       "serviceable": true,
@@ -2561,12 +2634,26 @@
       "path": "gherkin/19.0.3",
       "hashPath": "gherkin.19.0.3.nupkg.sha512"
     },
+    "HtmlAgilityPack/1.4.9.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zk7zsIaPkyBvYoVDsnx52SbKtvcmo2bcgNBshhSG++RnHMYoh0dqxRuQSznY+w6luiqR35OiHTk1L73SUAGKLw==",
+      "path": "htmlagilitypack/1.4.9.5",
+      "hashPath": "htmlagilitypack.1.4.9.5.nupkg.sha512"
+    },
     "MathNet.Numerics.Signed/4.15.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-LFjukMRatkg9dgRM7U/gM4uKgaWAX7E0lt3fsVDTPdtBIVuh7uPlksDie290br1/tv1a4Ar/Bz9ywCPSL8PhHg==",
       "path": "mathnet.numerics.signed/4.15.0",
       "hashPath": "mathnet.numerics.signed.4.15.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Razor/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
+      "path": "microsoft.aspnet.razor/3.0.0",
+      "hashPath": "microsoft.aspnet.razor.3.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore/2.2.0": {
       "type": "package",
@@ -3065,6 +3152,13 @@
       "path": "mongodb.bson/2.10.0",
       "hashPath": "mongodb.bson.2.10.0.nupkg.sha512"
     },
+    "MongoDB.Bson.signed/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-baKnLTBW1k4ZI/pdL8lgLM0w04EfBeqLk9/tgKcs2B3Uw9SiRulmLQwaJVSuxavkshLO0hLGnwsiIW8Oh1UCtw==",
+      "path": "mongodb.bson.signed/2.4.0",
+      "hashPath": "mongodb.bson.signed.2.4.0.nupkg.sha512"
+    },
     "MongoDB.Driver/2.10.0": {
       "type": "package",
       "serviceable": true,
@@ -3078,6 +3172,20 @@
       "sha512": "sha512-xz40z4BxfVY/Q99JiaPNwT/2/00auITn0hoWfSZy3WtkYkMQQIcZNlLr/ywRihJbDQXhVpAbyKCO9chYstQXEA==",
       "path": "mongodb.driver.core/2.10.0",
       "hashPath": "mongodb.driver.core.2.10.0.nupkg.sha512"
+    },
+    "MongoDB.Driver.Core.signed/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kBT6rNuoea3zjDINzTBmj0Nn9jhg+uup7TgsrxI6qR6frvMlNc1RhRouNGke3C3iRem8c6TKIEPLRS/2ajwFBg==",
+      "path": "mongodb.driver.core.signed/2.4.0",
+      "hashPath": "mongodb.driver.core.signed.2.4.0.nupkg.sha512"
+    },
+    "MongoDB.Driver.signed/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IAC+P6GLqnOUGR1fZ0oOWiRANFAOVz3d2B3t3exJGP8yW18IKpNlH05w/q4AHnSC8cX2NO8VyEVG2R8i7Iy9DA==",
+      "path": "mongodb.driver.signed/2.4.0",
+      "hashPath": "mongodb.driver.signed.2.4.0.nupkg.sha512"
     },
     "MongoDB.Libmongocrypt/1.0.0": {
       "type": "package",
@@ -3134,6 +3242,13 @@
       "sha512": "sha512-eZZBCABzVOek+id9Xy04HhmgykF0wZg9wpByzrWN7q8qEI0Qen9b7tfd7w8VA3dOeesumMG7C5ZPy0jk7PSRHw==",
       "path": "portable.bouncycastle/1.9.0",
       "hashPath": "portable.bouncycastle.1.9.0.nupkg.sha512"
+    },
+    "RazorEngine/3.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J/Y0wkyeilYPNFcW9xtGpRbFgNg0v6kDS/5Lq9MiI31bQxHBXiaKcOYrGK6NrAeX/OJuUsjXhcRINggSfwvlMg==",
+      "path": "razorengine/3.9.0",
+      "hashPath": "razorengine.3.9.0.nupkg.sha512"
     },
     "RazorEngine.NetCore/2.2.6": {
       "type": "package",
