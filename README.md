@@ -19,3 +19,7 @@ Espero que gostem e fiquem à vontade para utilizar como base. Melhorias sempre 
 
 Abs
 Vioti
+
+** 31/05/2023 - Atualização da classe DriverFactory:<br/>
+Agora pode ser utilizado os navegadores Chrome, Firefox, Edge e Safari nas execução dos testes. <br/>
+Atualização da classe PrintaTela para suportar os novos navegadores no momento de capturar imagens. 
