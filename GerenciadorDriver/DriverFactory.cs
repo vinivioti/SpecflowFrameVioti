@@ -2,8 +2,6 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
-using OpenQA.Selenium.Safari;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 
@@ -15,13 +13,9 @@ namespace FrameVioti.GerenciadorDriver
 
         private DriverFactory() { }
 
-        //public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
-        //  public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
-        //  public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Firefox)
-        //  public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Safari)
-          public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Opera)
-
-
+       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
+       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Firefox)
+        public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
         {
             if (driver == null)
             {
@@ -30,50 +24,22 @@ namespace FrameVioti.GerenciadorDriver
                     case BrowserType.Chrome:
                         new DriverManager().SetUpDriver(new ChromeConfig());
                         ChromeOptions chromeOptions = new ChromeOptions();
-                        // chromeOptions.AddArgument("--headless"); // Adicione o argumento para o modo headless (sem abrir a tela)
+                        // chromeOptions.AddArgument("--headless"); // Adicione esse argumento para executar em modo headless (sem abrir a janela do navegador)
                         driver = new ChromeDriver(chromeOptions);
                         break;
 
                     case BrowserType.Edge:
                         new DriverManager().SetUpDriver(new EdgeConfig());
-                        EdgeOptions edgeOptions = new EdgeOptions();
-                        // edgeOptions.AddArgument("--headless"); // Adicione o argumento para o modo headless (sem abrir a tela)
-                        driver = new EdgeDriver(edgeOptions);
+                        driver = new EdgeDriver();
                         break;
 
                     case BrowserType.Firefox:
                         new DriverManager().SetUpDriver(new FirefoxConfig());
-                        FirefoxOptions firefoxOptions = new FirefoxOptions();
-                       // firefoxOptions.AddArgument("--headless"); // Adicione o argumento para o modo headless (sem abrir a tela)
-                        driver = new FirefoxDriver(firefoxOptions);
+                        driver = new FirefoxDriver();
                         break;
-
-                    case BrowserType.Safari:
-                       // new DriverManager().SetUpDriver(new SafariConfig()); -> Não existe essa opção .. estudar melhor isso.
-                        driver = new SafariDriver();
-                        break;
-
-
-                 
-                        
-                    /*  
-                     *  
-                    //#### AJUSTAR NO FUTURO PARA O OPERAGX ###
-                    
-                      case BrowserType.Opera:
-                          new DriverManager().SetUpDriver(new ChromeConfig()); // Usando o driver do Chrome para o Opera
-                          ChromeOptions operaOptions = new ChromeOptions();
-                          operaOptions.BinaryLocation = "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\bin\\Debug\\net6.0\\Opera"; // Especifique o caminho para o executável do Opera
-                          //operaOptions.AddArgument("--headless"); // Adicione o argumento para o modo headless (sem abrir a tela)
-                          driver = new ChromeDriver(operaOptions);
-                          break;
-                       
-                    */
-
 
                     default:
-                        // Caso o tipo de navegador não seja suportado, lançar uma exceção ou definir um comportamento padrão
-                        throw new System.NotSupportedException($"Tipo de navegador '{browserType}' não suportado.");
+                        throw new WebDriverException("Invalid browser type provided.");
                 }
 
                 driver.Manage().Window.Maximize();
@@ -96,9 +62,6 @@ namespace FrameVioti.GerenciadorDriver
     {
         Chrome,
         Edge,
-        Firefox,
-        Safari,
-        Opera,
-        IE
+        Firefox
     }
 }
