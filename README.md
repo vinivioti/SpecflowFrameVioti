@@ -24,3 +24,5 @@ Vioti
 ** 31/05/2023 - Atualização da classe DriverFactory:<br/>
 - Agora pode ser utilizado os navegadores Chrome, Firefox e Edge nas execução dos testes. <br/>
 - Atualização da classe PrintaTela para suportar os novos navegadores no momento de capturar imagens. 
+  
+** 03/06/2023 - Inclusão da Bibliotece FAKER e Alteração para leitura e manipulação arquivos XLS,CSV,Word e PDF.  
