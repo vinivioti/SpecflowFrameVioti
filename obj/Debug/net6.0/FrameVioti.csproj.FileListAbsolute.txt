@@ -423,3 +423,8 @@ C:\Users\viniv\source2\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\de-DE\Fak
 C:\Users\viniv\source2\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
 C:\Users\viniv\source2\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\itextsharp.dll
 C:\Users\viniv\source2\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\DocumentFormat.OpenXml.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\Faker.Net.6.0.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\itextsharp.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\System.IO.Packaging.dll
+C:\Users\viniv\source\PessoalSpec\FrameViotiSpecflow\bin\Debug\net6.0\de-DE\Faker.Net.6.0.resources.dll
