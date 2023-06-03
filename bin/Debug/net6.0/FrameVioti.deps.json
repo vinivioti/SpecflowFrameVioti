@@ -8,16 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "FrameVioti/1.0.0": {
         "dependencies": {
+          "DocumentFormat.OpenXml": "2.20.0",
           "ExtentReports": "4.1.0",
           "ExtentReports.signed": "3.1.3",
+          "Faker.Net": "2.0.154",
           "FluentAssertions": "6.11.0",
-          "Microsoft.NET.Test.Sdk": "17.6.0",
+          "Microsoft.NET.Test.Sdk": "17.6.1",
           "NPOI": "2.6.0",
-          "NUnit3TestAdapter": "4.4.2",
+          "NUnit3TestAdapter": "4.5.0",
           "Selenium.WebDriver": "4.9.1",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "WebDriverManager": "2.16.2",
+          "iTextSharp": "5.5.13.3",
           "NUnit": "3.13.3"
         },
         "runtime": {
@@ -44,6 +47,7 @@
           }
         }
       },
+      "BouncyCastle/1.8.9": {},
       "DnsClient/1.2.0": {
         "dependencies": {
           "System.Buffers": "4.5.1"
@@ -52,6 +56,17 @@
           "lib/netstandard2.0/DnsClient.dll": {
             "assemblyVersion": "1.2.0.0",
             "fileVersion": "1.2.0.0"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.20.0": {
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.dll": {
+            "assemblyVersion": "2.20.0.0",
+            "fileVersion": "2.20.0.0"
           }
         }
       },
@@ -89,6 +104,22 @@
           "RazorEngine": "3.9.0"
         }
       },
+      "Faker.Net/2.0.154": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/net60/Faker.Net.6.0.dll": {
+            "assemblyVersion": "2.0.154.0",
+            "fileVersion": "2.0.154.0"
+          }
+        },
+        "resources": {
+          "lib/net60/de-DE/Faker.Net.6.0.resources.dll": {
+            "locale": "de-DE"
+          }
+        }
+      },
       "FluentAssertions/6.11.0": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "6.0.0"
@@ -113,6 +144,17 @@
           "lib/Net45/HtmlAgilityPack.dll": {
             "assemblyVersion": "1.4.9.5",
             "fileVersion": "1.4.9.5"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.3",
+            "fileVersion": "5.5.13.3"
           }
         }
       },
@@ -616,11 +658,11 @@
           }
         }
       },
-      "Microsoft.CodeCoverage/17.6.0": {
+      "Microsoft.CodeCoverage/17.6.1": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "17.600.1123.17103"
+            "fileVersion": "17.600.1423.27404"
           }
         }
       },
@@ -950,17 +992,17 @@
           }
         }
       },
-      "Microsoft.NET.Test.Sdk/17.6.0": {
+      "Microsoft.NET.Test.Sdk/17.6.1": {
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.6.0",
-          "Microsoft.TestPlatform.TestHost": "17.6.0"
+          "Microsoft.CodeCoverage": "17.6.1",
+          "Microsoft.TestPlatform.TestHost": "17.6.1"
         }
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
-      "Microsoft.TestPlatform.ObjectModel/17.6.0": {
+      "Microsoft.TestPlatform.ObjectModel/17.6.1": {
         "dependencies": {
-          "NuGet.Frameworks": "5.11.0",
+          "NuGet.Frameworks": "6.6.0",
           "System.Reflection.Metadata": "1.6.0"
         },
         "runtime": {
@@ -1058,9 +1100,9 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.6.0": {
+      "Microsoft.TestPlatform.TestHost/17.6.1": {
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.6.0",
+          "Microsoft.TestPlatform.ObjectModel": "17.6.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "runtime": {
@@ -1236,7 +1278,7 @@
       },
       "MongoDB.Bson/2.10.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Diagnostics.Process": "4.1.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -1252,7 +1294,7 @@
       },
       "MongoDB.Bson.signed/2.4.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.Collections.NonGeneric": "4.0.1",
           "System.Diagnostics.Process": "4.1.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -1264,7 +1306,7 @@
           "MongoDB.Bson": "2.10.0",
           "MongoDB.Driver.Core": "2.10.0",
           "MongoDB.Libmongocrypt": "1.0.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.ComponentModel.TypeConverter": "4.1.0",
           "System.Linq.Queryable": "4.0.1"
         },
@@ -1280,7 +1322,7 @@
           "DnsClient": "1.2.0",
           "MongoDB.Bson": "2.10.0",
           "MongoDB.Libmongocrypt": "1.0.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "SharpCompress": "0.23.0",
           "System.Collections.Specialized": "4.0.1",
           "System.Diagnostics.TextWriterTraceListener": "4.0.0",
@@ -1300,7 +1342,7 @@
       "MongoDB.Driver.Core.signed/2.4.0": {
         "dependencies": {
           "MongoDB.Bson.signed": "2.4.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.Collections.Specialized": "4.0.1",
           "System.Diagnostics.TraceSource": "4.0.0",
           "System.Net.NameResolution": "4.3.0",
@@ -1312,13 +1354,13 @@
         "dependencies": {
           "MongoDB.Bson.signed": "2.4.0",
           "MongoDB.Driver.Core.signed": "2.4.0",
-          "NETStandard.Library": "2.0.0",
+          "NETStandard.Library": "2.0.3",
           "System.Linq.Queryable": "4.0.1"
         }
       },
       "MongoDB.Libmongocrypt/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0"
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.5/MongoDB.Libmongocrypt.dll": {
@@ -1327,7 +1369,7 @@
           }
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1"
         }
@@ -1372,17 +1414,17 @@
           }
         }
       },
-      "NuGet.Frameworks/5.11.0": {
+      "NuGet.Frameworks/6.6.0": {
         "runtime": {
           "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "assemblyVersion": "5.11.0.10",
-            "fileVersion": "5.11.0.10"
+            "assemblyVersion": "6.6.0.62",
+            "fileVersion": "6.6.0.62"
           }
         }
       },
       "NUnit/3.13.3": {
         "dependencies": {
-          "NETStandard.Library": "2.0.0"
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
@@ -1391,7 +1433,7 @@
           }
         }
       },
-      "NUnit3TestAdapter/4.4.2": {},
+      "NUnit3TestAdapter/4.5.0": {},
       "Portable.BouncyCastle/1.9.0": {
         "runtime": {
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
@@ -1908,6 +1950,14 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
+          }
         }
       },
       "System.IO.Pipelines/4.5.2": {
@@ -2592,12 +2642,26 @@
       "path": "bodi/1.5.0",
       "hashPath": "bodi.1.5.0.nupkg.sha512"
     },
+    "BouncyCastle/1.8.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "path": "bouncycastle/1.8.9",
+      "hashPath": "bouncycastle.1.8.9.nupkg.sha512"
+    },
     "DnsClient/1.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "path": "dnsclient/1.2.0",
       "hashPath": "dnsclient.1.2.0.nupkg.sha512"
+    },
+    "DocumentFormat.OpenXml/2.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+oFMsEppo/W6KpGTRXaJl2jTFYn9zeon4FaZuDoCijQ1/0JaPENaCef7d4Y3f8v116eKhVBwd4Ya+/NDglxkjw==",
+      "path": "documentformat.openxml/2.20.0",
+      "hashPath": "documentformat.openxml.2.20.0.nupkg.sha512"
     },
     "Enums.NET/4.0.0": {
       "type": "package",
@@ -2620,6 +2684,13 @@
       "path": "extentreports.signed/3.1.3",
       "hashPath": "extentreports.signed.3.1.3.nupkg.sha512"
     },
+    "Faker.Net/2.0.154": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pkabhT7wxNR1gkPO6ga77XdeqBblaE8a1oY47eMGGvM7DMZ9S8ARZrKkRWaPUNjGCOqtH3oeQSMuEPxd98ir4w==",
+      "path": "faker.net/2.0.154",
+      "hashPath": "faker.net.2.0.154.nupkg.sha512"
+    },
     "FluentAssertions/6.11.0": {
       "type": "package",
       "serviceable": true,
@@ -2640,6 +2711,13 @@
       "sha512": "sha512-zk7zsIaPkyBvYoVDsnx52SbKtvcmo2bcgNBshhSG++RnHMYoh0dqxRuQSznY+w6luiqR35OiHTk1L73SUAGKLw==",
       "path": "htmlagilitypack/1.4.9.5",
       "hashPath": "htmlagilitypack.1.4.9.5.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "path": "itextsharp/5.5.13.3",
+      "hashPath": "itextsharp.5.5.13.3.nupkg.sha512"
     },
     "MathNet.Numerics.Signed/4.15.0": {
       "type": "package",
@@ -2879,12 +2957,12 @@
       "path": "microsoft.codeanalysis.csharp/2.8.0",
       "hashPath": "microsoft.codeanalysis.csharp.2.8.0.nupkg.sha512"
     },
-    "Microsoft.CodeCoverage/17.6.0": {
+    "Microsoft.CodeCoverage/17.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5v2GwzpR7JEuQUzupjx3zLwn2FutADW/weLzLt726DR3WXxsM+ICPoJG6pxuKFsumtZp890UrVuudTUhsE8Qyg==",
-      "path": "microsoft.codecoverage/17.6.0",
-      "hashPath": "microsoft.codecoverage.17.6.0.nupkg.sha512"
+      "sha512": "sha512-WbMWrVQo30ayRtikBYcBOdUoOQ/5Dr23eSoAt4Mp8O5Llshi8FTQ6WcdODI+WJ2cJtFoqsHNQBGpdRmp2c4u2w==",
+      "path": "microsoft.codecoverage/17.6.1",
+      "hashPath": "microsoft.codecoverage.17.6.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.5.0": {
       "type": "package",
@@ -3089,12 +3167,12 @@
       "path": "microsoft.net.http.headers/2.2.0",
       "hashPath": "microsoft.net.http.headers.2.2.0.nupkg.sha512"
     },
-    "Microsoft.NET.Test.Sdk/17.6.0": {
+    "Microsoft.NET.Test.Sdk/17.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tHyg4C6c89QvLv6Utz3xKlba4EeoyJyIz59Q1NrjRENV7gfGnSE6I+sYPIbVOzQttoo2zpHDgOK/p6Hw2OlD7A==",
-      "path": "microsoft.net.test.sdk/17.6.0",
-      "hashPath": "microsoft.net.test.sdk.17.6.0.nupkg.sha512"
+      "sha512": "sha512-8UKhpVrgcR85ZRYkS4CFJSWe2rkfqdwEJqqzvjbWWTCJjR2ScAf9Rj1mLOkbJtijkhOPbWDyLUxoFvGq1JPLXQ==",
+      "path": "microsoft.net.test.sdk/17.6.1",
+      "hashPath": "microsoft.net.test.sdk.17.6.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.1": {
       "type": "package",
@@ -3110,19 +3188,19 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.ObjectModel/17.6.0": {
+    "Microsoft.TestPlatform.ObjectModel/17.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AA/rrf5zwC5/OBLEOajkhjbVTM3SvxRXy8kcQ8e4mJKojbyZvqqhpfNg362N9vXU94DLg9NUTFOAnoYVT0pTJw==",
-      "path": "microsoft.testplatform.objectmodel/17.6.0",
-      "hashPath": "microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512"
+      "sha512": "sha512-8RZNuUALSNFgBYSDpUWD11PjVBLUNsvM4kqHLASbTgqxx4IpRo8LQ1ZVsgZvePMf/gOzDQVejr+AtP42tHQjrg==",
+      "path": "microsoft.testplatform.objectmodel/17.6.1",
+      "hashPath": "microsoft.testplatform.objectmodel.17.6.1.nupkg.sha512"
     },
-    "Microsoft.TestPlatform.TestHost/17.6.0": {
+    "Microsoft.TestPlatform.TestHost/17.6.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7YdgUcIeCPVKLC7n7LNKDiEHWc7z3brkkYPdUbDnFsvf6WvY9UfzS0VSUJ8P2NgN0CDSD223GCJFSjSBLZRqOQ==",
-      "path": "microsoft.testplatform.testhost/17.6.0",
-      "hashPath": "microsoft.testplatform.testhost.17.6.0.nupkg.sha512"
+      "sha512": "sha512-h0ObxpY1nZ3jnQ5VBuZpDGUQ/RscYjfpoQCPKZT/YZ1qYqcMtsi/o40sFRkXu515i0e3OW746E04Ej4qc3Uj5g==",
+      "path": "microsoft.testplatform.testhost/17.6.1",
+      "hashPath": "microsoft.testplatform.testhost.17.6.1.nupkg.sha512"
     },
     "Microsoft.Win32.Primitives/4.3.0": {
       "type": "package",
@@ -3194,12 +3272,12 @@
       "path": "mongodb.libmongocrypt/1.0.0",
       "hashPath": "mongodb.libmongocrypt.1.0.0.nupkg.sha512"
     },
-    "NETStandard.Library/2.0.0": {
+    "NETStandard.Library/2.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
-      "path": "netstandard.library/2.0.0",
-      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
@@ -3215,12 +3293,12 @@
       "path": "npoi/2.6.0",
       "hashPath": "npoi.2.6.0.nupkg.sha512"
     },
-    "NuGet.Frameworks/5.11.0": {
+    "NuGet.Frameworks/6.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
-      "path": "nuget.frameworks/5.11.0",
-      "hashPath": "nuget.frameworks.5.11.0.nupkg.sha512"
+      "sha512": "sha512-kgoOHa5bNq+X0nD8jsmYkctJz0jICSvaHxYGuROj4se3pYkkvQ2PjpyA7RMHuxN/TD3ueEWgSyoWBks8YA34vw==",
+      "path": "nuget.frameworks/6.6.0",
+      "hashPath": "nuget.frameworks.6.6.0.nupkg.sha512"
     },
     "NUnit/3.13.3": {
       "type": "package",
@@ -3229,12 +3307,12 @@
       "path": "nunit/3.13.3",
       "hashPath": "nunit.3.13.3.nupkg.sha512"
     },
-    "NUnit3TestAdapter/4.4.2": {
+    "NUnit3TestAdapter/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
-      "path": "nunit3testadapter/4.4.2",
-      "hashPath": "nunit3testadapter.4.4.2.nupkg.sha512"
+      "sha512": "sha512-s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
+      "path": "nunit3testadapter/4.5.0",
+      "hashPath": "nunit3testadapter.4.5.0.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.9.0": {
       "type": "package",
@@ -3669,6 +3747,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Packaging/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "path": "system.io.packaging/4.7.0",
+      "hashPath": "system.io.packaging.4.7.0.nupkg.sha512"
     },
     "System.IO.Pipelines/4.5.2": {
       "type": "package",

@@ -7,15 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.20.0" />
     <PackageReference Include="ExtentReports" Version="4.1.0" />
     <PackageReference Include="ExtentReports.signed" Version="3.1.3" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="Faker.Net" Version="2.0.154" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.1" />
     <PackageReference Include="NPOI" Version="2.6.0" />
     <PackageReference Include="Selenium.WebDriver" Version="4.9.1" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
     <PackageReference Include="SpecFlow.NUnit" Version="3.9.74" />
     <PackageReference Include="nunit" Version="3.13.3" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.4.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
     <PackageReference Include="FluentAssertions" Version="6.11.0" />
     <PackageReference Include="WebDriverManager" Version="2.16.2" />
   </ItemGroup>

@@ -35,6 +35,15 @@
           "build/_._": {}
         }
       },
+      "BouncyCastle/1.8.9": {
+        "type": "package",
+        "compile": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "DnsClient/1.2.0": {
         "type": "package",
         "dependencies": {
@@ -47,6 +56,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/DnsClient.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.20.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Packaging": "4.7.0"
+        },
+        "compile": {
+          "lib/net6.0/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/DocumentFormat.OpenXml.dll": {
             "related": ".xml"
           }
         }
@@ -98,6 +123,23 @@
           "lib/ExtentReports.dll": {}
         }
       },
+      "Faker.Net/2.0.154": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "compile": {
+          "lib/net60/Faker.Net.6.0.dll": {}
+        },
+        "runtime": {
+          "lib/net60/Faker.Net.6.0.dll": {}
+        },
+        "resource": {
+          "lib/net60/de-DE/Faker.Net.6.0.resources.dll": {
+            "locale": "de-DE"
+          }
+        }
+      },
       "FluentAssertions/6.11.0": {
         "type": "package",
         "dependencies": {
@@ -138,6 +180,18 @@
           "lib/Net45/HtmlAgilityPack.dll": {
             "related": ".pdb;.XML"
           }
+        }
+      },
+      "iTextSharp/5.5.13.3": {
+        "type": "package",
+        "dependencies": {
+          "BouncyCastle": "1.8.9"
+        },
+        "compile": {
+          "lib/itextsharp.dll": {}
+        },
+        "runtime": {
+          "lib/itextsharp.dll": {}
         }
       },
       "MathNet.Numerics.Signed/4.15.0": {
@@ -811,7 +865,7 @@
           }
         }
       },
-      "Microsoft.CodeCoverage/17.6.0": {
+      "Microsoft.CodeCoverage/17.6.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
@@ -1293,11 +1347,11 @@
           }
         }
       },
-      "Microsoft.NET.Test.Sdk/17.6.0": {
+      "Microsoft.NET.Test.Sdk/17.6.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeCoverage": "17.6.0",
-          "Microsoft.TestPlatform.TestHost": "17.6.0"
+          "Microsoft.CodeCoverage": "17.6.1",
+          "Microsoft.TestPlatform.TestHost": "17.6.1"
         },
         "compile": {
           "lib/netcoreapp3.1/_._": {}
@@ -1331,10 +1385,10 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.TestPlatform.ObjectModel/17.6.0": {
+      "Microsoft.TestPlatform.ObjectModel/17.6.1": {
         "type": "package",
         "dependencies": {
-          "NuGet.Frameworks": "5.11.0",
+          "NuGet.Frameworks": "6.6.0",
           "System.Reflection.Metadata": "1.6.0"
         },
         "compile": {
@@ -1428,10 +1482,10 @@
           }
         }
       },
-      "Microsoft.TestPlatform.TestHost/17.6.0": {
+      "Microsoft.TestPlatform.TestHost/17.6.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.TestPlatform.ObjectModel": "17.6.0",
+          "Microsoft.TestPlatform.ObjectModel": "17.6.1",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -1784,7 +1838,7 @@
           "build/_._": {}
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -1855,17 +1909,13 @@
           }
         }
       },
-      "NuGet.Frameworks/5.11.0": {
+      "NuGet.Frameworks/6.6.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/NuGet.Frameworks.dll": {
-            "related": ".xml"
-          }
+          "lib/netstandard2.0/NuGet.Frameworks.dll": {}
         }
       },
       "NUnit/3.13.3": {
@@ -1887,7 +1937,7 @@
           "build/NUnit.props": {}
         }
       },
-      "NUnit3TestAdapter/4.4.2": {
+      "NUnit3TestAdapter/4.5.0": {
         "type": "package",
         "build": {
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
@@ -2902,6 +2952,19 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
+        }
+      },
+      "System.IO.Packaging/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Packaging.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Pipelines/4.5.2": {
@@ -4228,6 +4291,19 @@
         "tools/_._"
       ]
     },
+    "BouncyCastle/1.8.9": {
+      "sha512": "axnBgvdD5n+FnEG6efk/tfKuMFru7R/EoISH9zjh319yb3HD24TEHSAbNN/lTRT2ulOGRxDgOsCjkuk08iwWPg==",
+      "type": "package",
+      "path": "bouncycastle/1.8.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "bouncycastle.1.8.9.nupkg.sha512",
+        "bouncycastle.nuspec",
+        "lib/BouncyCastle.Crypto.dll"
+      ]
+    },
     "DnsClient/1.2.0": {
       "sha512": "P34wUkeqU4FoQiOMV8OjpdeDZKs4d3r+VlHuKJ6eO5feiZgna3+9MF5orHRUn3DAv1g/HPE5hlkGucmxmsFfBw==",
       "type": "package",
@@ -4245,6 +4321,30 @@
         "lib/netstandard1.3/DnsClient.xml",
         "lib/netstandard2.0/DnsClient.dll",
         "lib/netstandard2.0/DnsClient.xml"
+      ]
+    },
+    "DocumentFormat.OpenXml/2.20.0": {
+      "sha512": "+oFMsEppo/W6KpGTRXaJl2jTFYn9zeon4FaZuDoCijQ1/0JaPENaCef7d4Y3f8v116eKhVBwd4Ya+/NDglxkjw==",
+      "type": "package",
+      "path": "documentformat.openxml/2.20.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "documentformat.openxml.2.20.0.nupkg.sha512",
+        "documentformat.openxml.nuspec",
+        "icon.png",
+        "lib/net35/DocumentFormat.OpenXml.dll",
+        "lib/net35/DocumentFormat.OpenXml.xml",
+        "lib/net40/DocumentFormat.OpenXml.dll",
+        "lib/net40/DocumentFormat.OpenXml.xml",
+        "lib/net46/DocumentFormat.OpenXml.dll",
+        "lib/net46/DocumentFormat.OpenXml.xml",
+        "lib/net6.0/DocumentFormat.OpenXml.dll",
+        "lib/net6.0/DocumentFormat.OpenXml.xml",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.dll",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.xml",
+        "lib/netstandard2.0/DocumentFormat.OpenXml.dll",
+        "lib/netstandard2.0/DocumentFormat.OpenXml.xml"
       ]
     },
     "Enums.NET/4.0.0": {
@@ -4303,6 +4403,37 @@
         "extentreports.signed.3.1.3.nupkg.sha512",
         "extentreports.signed.nuspec",
         "lib/ExtentReports.dll"
+      ]
+    },
+    "Faker.Net/2.0.154": {
+      "sha512": "pkabhT7wxNR1gkPO6ga77XdeqBblaE8a1oY47eMGGvM7DMZ9S8ARZrKkRWaPUNjGCOqtH3oeQSMuEPxd98ir4w==",
+      "type": "package",
+      "path": "faker.net/2.0.154",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "faker.net.2.0.154.nupkg.sha512",
+        "faker.net.nuspec",
+        "lib/net452/Faker.Net.4.5.dll",
+        "lib/net452/de-DE/Faker.Net.4.5.resources.dll",
+        "lib/net462/Faker.Net.4.6.dll",
+        "lib/net462/de-DE/Faker.Net.4.6.resources.dll",
+        "lib/net472/Faker.Net.4.7.dll",
+        "lib/net472/de-DE/Faker.Net.4.7.resources.dll",
+        "lib/net48/Faker.Net.4.8.dll",
+        "lib/net48/de-DE/Faker.Net.4.8.resources.dll",
+        "lib/net50/Faker.Net.5.0.dll",
+        "lib/net50/de-DE/Faker.Net.5.0.resources.dll",
+        "lib/net60/Faker.Net.6.0.dll",
+        "lib/net60/de-DE/Faker.Net.6.0.resources.dll",
+        "lib/netcoreapp3.0/Faker.Net.Core.3.0.dll",
+        "lib/netcoreapp3.0/de-DE/Faker.Net.Core.3.0.resources.dll",
+        "lib/netcoreapp3.1/Faker.Net.Core.3.1.dll",
+        "lib/netcoreapp3.1/de-DE/Faker.Net.Core.3.1.resources.dll",
+        "lib/netstandard2.0/Faker.Net.Standard.2.0.dll",
+        "lib/netstandard2.0/de-DE/Faker.Net.Standard.2.0.resources.dll",
+        "lib/netstandard2.1/Faker.Net.Standard.2.1.dll",
+        "lib/netstandard2.1/de-DE/Faker.Net.Standard.2.1.resources.dll"
       ]
     },
     "FluentAssertions/6.11.0": {
@@ -4385,6 +4516,22 @@
         "lib/sl5/HtmlAgilityPack.dll",
         "lib/sl5/HtmlAgilityPack.pdb",
         "readme.txt"
+      ]
+    },
+    "iTextSharp/5.5.13.3": {
+      "sha512": "vtnMhTEJdZFCkLqaQLjD8aqTBIVKHPrSFuSXnxbLEJlvE/j/l88fvG9wtsejXTmhtErMo0lA9T2LdfdfbwplYw==",
+      "type": "package",
+      "path": "itextsharp/5.5.13.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "gnu-agpl-v3.0.md",
+        "itextsharp.5.5.13.3.nupkg.sha512",
+        "itextsharp.nuspec",
+        "lib/iTextSharp.xml",
+        "lib/itextsharp.dll",
+        "notice.txt"
       ]
     },
     "MathNet.Numerics.Signed/4.15.0": {
@@ -4858,10 +5005,10 @@
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
-    "Microsoft.CodeCoverage/17.6.0": {
-      "sha512": "5v2GwzpR7JEuQUzupjx3zLwn2FutADW/weLzLt726DR3WXxsM+ICPoJG6pxuKFsumtZp890UrVuudTUhsE8Qyg==",
+    "Microsoft.CodeCoverage/17.6.1": {
+      "sha512": "WbMWrVQo30ayRtikBYcBOdUoOQ/5Dr23eSoAt4Mp8O5Llshi8FTQ6WcdODI+WJ2cJtFoqsHNQBGpdRmp2c4u2w==",
       "type": "package",
-      "path": "microsoft.codecoverage/17.6.0",
+      "path": "microsoft.codecoverage/17.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4920,7 +5067,7 @@
         "build/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TraceDataCollector.resources.dll",
         "lib/net462/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
         "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll",
-        "microsoft.codecoverage.17.6.0.nupkg.sha512",
+        "microsoft.codecoverage.17.6.1.nupkg.sha512",
         "microsoft.codecoverage.nuspec"
       ]
     },
@@ -5373,10 +5520,10 @@
         "microsoft.net.http.headers.nuspec"
       ]
     },
-    "Microsoft.NET.Test.Sdk/17.6.0": {
-      "sha512": "tHyg4C6c89QvLv6Utz3xKlba4EeoyJyIz59Q1NrjRENV7gfGnSE6I+sYPIbVOzQttoo2zpHDgOK/p6Hw2OlD7A==",
+    "Microsoft.NET.Test.Sdk/17.6.1": {
+      "sha512": "8UKhpVrgcR85ZRYkS4CFJSWe2rkfqdwEJqqzvjbWWTCJjR2ScAf9Rj1mLOkbJtijkhOPbWDyLUxoFvGq1JPLXQ==",
       "type": "package",
-      "path": "microsoft.net.test.sdk/17.6.0",
+      "path": "microsoft.net.test.sdk/17.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5392,7 +5539,7 @@
         "buildMultiTargeting/Microsoft.NET.Test.Sdk.props",
         "lib/net462/_._",
         "lib/netcoreapp3.1/_._",
-        "microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+        "microsoft.net.test.sdk.17.6.1.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
       ]
     },
@@ -5426,10 +5573,10 @@
         "runtime.json"
       ]
     },
-    "Microsoft.TestPlatform.ObjectModel/17.6.0": {
-      "sha512": "AA/rrf5zwC5/OBLEOajkhjbVTM3SvxRXy8kcQ8e4mJKojbyZvqqhpfNg362N9vXU94DLg9NUTFOAnoYVT0pTJw==",
+    "Microsoft.TestPlatform.ObjectModel/17.6.1": {
+      "sha512": "8RZNuUALSNFgBYSDpUWD11PjVBLUNsvM4kqHLASbTgqxx4IpRo8LQ1ZVsgZvePMf/gOzDQVejr+AtP42tHQjrg==",
       "type": "package",
-      "path": "microsoft.testplatform.objectmodel/17.6.0",
+      "path": "microsoft.testplatform.objectmodel/17.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5522,14 +5669,14 @@
         "lib/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
-        "microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+        "microsoft.testplatform.objectmodel.17.6.1.nupkg.sha512",
         "microsoft.testplatform.objectmodel.nuspec"
       ]
     },
-    "Microsoft.TestPlatform.TestHost/17.6.0": {
-      "sha512": "7YdgUcIeCPVKLC7n7LNKDiEHWc7z3brkkYPdUbDnFsvf6WvY9UfzS0VSUJ8P2NgN0CDSD223GCJFSjSBLZRqOQ==",
+    "Microsoft.TestPlatform.TestHost/17.6.1": {
+      "sha512": "h0ObxpY1nZ3jnQ5VBuZpDGUQ/RscYjfpoQCPKZT/YZ1qYqcMtsi/o40sFRkXu515i0e3OW746E04Ej4qc3Uj5g==",
       "type": "package",
-      "path": "microsoft.testplatform.testhost/17.6.0",
+      "path": "microsoft.testplatform.testhost/17.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5592,7 +5739,7 @@
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll",
         "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll",
-        "microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+        "microsoft.testplatform.testhost.17.6.1.nupkg.sha512",
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
@@ -5819,16 +5966,15 @@
         "x64/native/windows/mongocrypt.dll"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.3": {
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -5945,7 +6091,7 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     },
@@ -6041,21 +6187,18 @@
         "npoi.nuspec"
       ]
     },
-    "NuGet.Frameworks/5.11.0": {
-      "sha512": "eaiXkUjC4NPcquGWzAGMXjuxvLwc6XGKMptSyOGQeT0X70BUZObuybJFZLA0OfTdueLd3US23NBPTBb6iF3V1Q==",
+    "NuGet.Frameworks/6.6.0": {
+      "sha512": "kgoOHa5bNq+X0nD8jsmYkctJz0jICSvaHxYGuROj4se3pYkkvQ2PjpyA7RMHuxN/TD3ueEWgSyoWBks8YA34vw==",
       "type": "package",
-      "path": "nuget.frameworks/5.11.0",
+      "path": "nuget.frameworks/6.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "README.md",
         "icon.png",
-        "lib/net40/NuGet.Frameworks.dll",
-        "lib/net40/NuGet.Frameworks.xml",
         "lib/net472/NuGet.Frameworks.dll",
-        "lib/net472/NuGet.Frameworks.xml",
         "lib/netstandard2.0/NuGet.Frameworks.dll",
-        "lib/netstandard2.0/NuGet.Frameworks.xml",
-        "nuget.frameworks.5.11.0.nupkg.sha512",
+        "nuget.frameworks.6.6.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
       ]
     },
@@ -6083,10 +6226,10 @@
         "nunit.nuspec"
       ]
     },
-    "NUnit3TestAdapter/4.4.2": {
-      "sha512": "vA/iHYcR+LYw+pRWQugckC/zW2fXHaqMr2uA82NOBt8v4YK4wMJrQ7QC8XLc7PjetEZ96cPbBTWsDDtmQiRZTA==",
+    "NUnit3TestAdapter/4.5.0": {
+      "sha512": "s8JpqTe9bI2f49Pfr3dFRfoVSuFQyraTj68c3XXjIS/MRGvvkLnrg6RLqnTjdShX+AdFUCCU/4Xex58AdUfs6A==",
       "type": "package",
-      "path": "nunit3testadapter/4.4.2",
+      "path": "nunit3testadapter/4.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6105,7 +6248,7 @@
         "build/netcoreapp3.1/nunit.engine.dll",
         "build/netcoreapp3.1/testcentric.engine.metadata.dll",
         "docs/README.md",
-        "nunit3testadapter.4.4.2.nupkg.sha512",
+        "nunit3testadapter.4.5.0.nupkg.sha512",
         "nunit3testadapter.nuspec",
         "nunit_256.png"
       ]
@@ -8415,6 +8558,33 @@
         "ref/xamarinwatchos10/_._",
         "system.io.filesystem.primitives.4.3.0.nupkg.sha512",
         "system.io.filesystem.primitives.nuspec"
+      ]
+    },
+    "System.IO.Packaging/4.7.0": {
+      "sha512": "9VV4KAbgRQZ79iEoG40KIeZy38O30oWwewScAST879+oki8g/Wa2HXZQgrhDDxQM4GkP1PnRJll05NMiVPbYAw==",
+      "type": "package",
+      "path": "system.io.packaging/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net46/System.IO.Packaging.dll",
+        "lib/net46/System.IO.Packaging.xml",
+        "lib/netstandard1.3/System.IO.Packaging.dll",
+        "lib/netstandard1.3/System.IO.Packaging.xml",
+        "lib/netstandard2.0/System.IO.Packaging.dll",
+        "lib/netstandard2.0/System.IO.Packaging.xml",
+        "ref/net46/System.IO.Packaging.dll",
+        "ref/net46/System.IO.Packaging.xml",
+        "ref/netstandard1.3/System.IO.Packaging.dll",
+        "ref/netstandard1.3/System.IO.Packaging.xml",
+        "ref/netstandard2.0/System.IO.Packaging.dll",
+        "ref/netstandard2.0/System.IO.Packaging.xml",
+        "system.io.packaging.4.7.0.nupkg.sha512",
+        "system.io.packaging.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.IO.Pipelines/4.5.2": {
@@ -11534,16 +11704,19 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DocumentFormat.OpenXml >= 2.20.0",
       "ExtentReports >= 4.1.0",
       "ExtentReports.signed >= 3.1.3",
+      "Faker.Net >= 2.0.154",
       "FluentAssertions >= 6.11.0",
-      "Microsoft.NET.Test.Sdk >= 17.6.0",
+      "Microsoft.NET.Test.Sdk >= 17.6.1",
       "NPOI >= 2.6.0",
-      "NUnit3TestAdapter >= 4.4.2",
+      "NUnit3TestAdapter >= 4.5.0",
       "Selenium.WebDriver >= 4.9.1",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "WebDriverManager >= 2.16.2",
+      "iTextSharp >= 5.5.13.3",
       "nunit >= 3.13.3"
     ]
   },
@@ -11554,11 +11727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+      "projectUniqueName": "C:\\Users\\viniv\\source2\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
       "projectName": "FrameVioti",
-      "projectPath": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+      "projectPath": "C:\\Users\\viniv\\source2\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
       "packagesPath": "C:\\Users\\viniv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\obj\\",
+      "outputPath": "C:\\Users\\viniv\\source2\\PessoalSpec\\FrameViotiSpecflow\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -11591,6 +11764,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DocumentFormat.OpenXml": {
+            "target": "Package",
+            "version": "[2.20.0, )"
+          },
           "ExtentReports": {
             "target": "Package",
             "version": "[4.1.0, )"
@@ -11599,13 +11776,17 @@
             "target": "Package",
             "version": "[3.1.3, )"
           },
+          "Faker.Net": {
+            "target": "Package",
+            "version": "[2.0.154, )"
+          },
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.11.0, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "[17.6.0, )"
+            "version": "[17.6.1, )"
           },
           "NPOI": {
             "target": "Package",
@@ -11613,7 +11794,7 @@
           },
           "NUnit3TestAdapter": {
             "target": "Package",
-            "version": "[4.4.2, )"
+            "version": "[4.5.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
@@ -11630,6 +11811,10 @@
           "WebDriverManager": {
             "target": "Package",
             "version": "[2.16.2, )"
+          },
+          "iTextSharp": {
+            "target": "Package",
+            "version": "[5.5.13.3, )"
           },
           "nunit": {
             "target": "Package",
@@ -11701,6 +11886,16 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
+      "message": "O pacote 'BouncyCastle 1.8.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "BouncyCastle",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
       "message": "O pacote 'ExtentReports.signed 3.1.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "ExtentReports.signed",
       "targetGraphs": [
@@ -11713,6 +11908,16 @@
       "warningLevel": 1,
       "message": "O pacote 'HtmlAgilityPack 1.4.9.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "HtmlAgilityPack",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'iTextSharp 5.5.13.3' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "iTextSharp",
       "targetGraphs": [
         "net6.0"
       ]

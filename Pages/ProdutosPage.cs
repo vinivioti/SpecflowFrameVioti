@@ -1,17 +1,21 @@
 ﻿using FrameVioti.Elementos;
 using FrameVioti.GerenciadorDriver;
 using OpenQA.Selenium.Support.UI;
+using Faker;
+using Faker.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FrameVioti.Support;
 
 namespace FrameVioti.Pages
 {
     [Binding]
     public class ProdutosPage : ProdutosElementos
     {
+        private PrintaTela print = new PrintaTela();
 
 
         public ProdutosPage FiltroSelecaoProduto()
@@ -64,15 +68,18 @@ namespace FrameVioti.Pages
             Thread.Sleep(2000);
             var wait = new WebDriverWait(DriverFactory.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until((d) => d.FindElement(GetFirstName()) != null);
-            DriverFactory.GetDriver().FindElement(GetFirstName()).SendKeys("ViniTest");
+            DriverFactory.GetDriver().FindElement(GetFirstName()).SendKeys(Faker.Name.First());
 
             var wait1 = new WebDriverWait(DriverFactory.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until((d) => d.FindElement(GetLastName()) != null);
-            DriverFactory.GetDriver().FindElement(GetLastName()).SendKeys("LastName");
+            DriverFactory.GetDriver().FindElement(GetLastName()).SendKeys(Faker.Name.Middle());
 
             var wait2 = new WebDriverWait(DriverFactory.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until((d) => d.FindElement(GetZipCode()) != null);
-            DriverFactory.GetDriver().FindElement(GetZipCode()).SendKeys("02641000");
+            DriverFactory.GetDriver().FindElement(GetZipCode()).SendKeys(Faker.Address.ZipCode());
+
+            Thread.Sleep(1000);
+            print.TakeScreenshot();
 
             var wait3 = new WebDriverWait(DriverFactory.GetDriver(), TimeSpan.FromSeconds(10));
             wait.Until((d) => d.FindElement(GetBtnContinue()) != null);

@@ -103,6 +103,7 @@ namespace FrameVioti.StepDefinitions
         public void WhenPreenchoOsDadosDeMinhasInformacoesContinuando()
         {
             prodPage.PreencheDados();
+
         }
 
         [When(@"clico em Finish")]

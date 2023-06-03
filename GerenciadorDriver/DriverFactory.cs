@@ -13,9 +13,9 @@ namespace FrameVioti.GerenciadorDriver
 
         private DriverFactory() { }
 
-       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
+        public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
        // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Firefox)
-        public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
+       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
         {
             if (driver == null)
             {
