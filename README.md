@@ -28,3 +28,5 @@ Vioti<br/>
 - Atualização da classe PrintaTela para suportar os novos navegadores no momento de capturar imagens. 
   
 ** **03/06/2023** ** - Inclusão da Biblioteca FAKER e Alteração para leitura e manipulação arquivos XLS,CSV,Word e PDF.  
+** **26/06/2023** ** - Alteração da classe PrintaTela para organizar e salvar na pasta do dia do teste.  
+
