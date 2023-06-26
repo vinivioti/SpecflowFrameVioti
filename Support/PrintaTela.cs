@@ -1,9 +1,7 @@
-﻿using FluentAssertions.Extensions;
-using FrameVioti.GerenciadorDriver;
-using NPOI.SS.Util;
+﻿using FrameVioti.GerenciadorDriver;
 using OpenQA.Selenium;
-using System.IO;
 using System;
+using System.IO;
 
 namespace FrameVioti.Support
 {
@@ -13,25 +11,27 @@ namespace FrameVioti.Support
         {
             try
             {
-                // ***** Salva na pasta Evidencias dentro da pasta bin->Debug->net.6.0 *** //
-
-                // Obter o diretório base do projeto 
                 string pastaProjeto = AppDomain.CurrentDomain.BaseDirectory;
-
-                // Construir o caminho para a pasta Evidencias
                 string pastaEvidencias = Path.Combine(pastaProjeto, "Evidencias");
 
-                // Certificar-se de que a pasta Evidencias existe, caso contrário, criar
-                if (!Directory.Exists(pastaEvidencias))
-                    Directory.CreateDirectory(pastaEvidencias);
+                // Obter a data e hora atual
+                DateTime dataAtual = DateTime.Now;
+
+                // Criar o nome da pasta com base na data e hora atual
+                string nomePastaData = dataAtual.ToString("dd-MM-yyyy");
+
+                // Combinar o caminho da pasta Evidencias com o nome da pasta de data
+                string caminhoPastaData = Path.Combine(pastaEvidencias, nomePastaData);
+
+                // Certificar-se de que a pasta da data existe, caso contrário, criar
+                if (!Directory.Exists(caminhoPastaData))
+                    Directory.CreateDirectory(caminhoPastaData);
 
                 Screenshot ss = ((ITakesScreenshot)DriverFactory.GetDriver(BrowserType.Chrome)).GetScreenshot();
 
-                DateTime dataAtual = DateTime.Now;
-                string filename = dataAtual.ToString("dd-MM-yyyy-hhmmss");
-                string caminhoArquivo = Path.Combine(pastaEvidencias, $"Evidencia-{filename}.png");
+                string nomeArquivo = dataAtual.ToString("dd-MM-yyyy-HHmmss");
+                string caminhoArquivo = Path.Combine(caminhoPastaData, $"Evidencia-{nomeArquivo}.png");
                 ss.SaveAsFile(caminhoArquivo, ScreenshotImageFormat.Png);
-
             }
             catch (Exception e)
             {
@@ -39,5 +39,7 @@ namespace FrameVioti.Support
                 throw;
             }
         }
+
+
     }
 }

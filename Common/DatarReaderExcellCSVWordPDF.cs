@@ -14,7 +14,7 @@ using Path = System.IO.Path;
 
 namespace FrameVioti.Common
 {
-    public class LeitorDeDadosExcellCSVWordPDF
+    public class DatarReaderExcellCSVWordPDF
     {
         private string nomeArquivo;
         private XSSFWorkbook wb;
@@ -23,7 +23,7 @@ namespace FrameVioti.Common
         private WordprocessingDocument documentoWord;
         private iTextSharp.text.pdf.PdfReader documentoPDF;
 
-        public LeitorDeDadosExcellCSVWordPDF(string nomeArquivo, int indicePlanilha)
+        public DatarReaderExcellCSVWordPDF(string nomeArquivo, int indicePlanilha)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace FrameVioti.Common
             }
         }
 
-        public LeitorDeDadosExcellCSVWordPDF(string nomeArquivo, string nomeAba)
+        public DatarReaderExcellCSVWordPDF(string nomeArquivo, string nomeAba)
         {
             this.nomeArquivo = ObtemCaminhoDoArquivo(nomeArquivo);
             if (nomeArquivo.EndsWith(".xlsx"))
