@@ -29,6 +29,6 @@ Vioti<br/>
   
 ** **03/06/2023** ** - Inclusão da Biblioteca FAKER e Alteração para leitura e manipulação arquivos XLS,CSV,Word e PDF.  
 ** **26/06/2023** ** - Alteração da classe PrintaTela para organizar e salvar na pasta do dia do teste.  
-** **26/06/2023** ** - Inclusão de um exemplo de como inserir um arquivo no DOM na classe ProdutosPage utilizando caminho genérico para chegar até o arquivo desejado, e adição da pasta GerenciadorFiles diretamente no projeto 
+** **12/07/2023** ** - Inclusão de um exemplo de como inserir um arquivo no DOM na classe ProdutosPage utilizando caminho genérico para chegar até o arquivo desejado, e adição da pasta GerenciadorFiles diretamente no projeto 
 
 
