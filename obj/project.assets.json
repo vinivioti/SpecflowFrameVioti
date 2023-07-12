@@ -11727,11 +11727,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+      "projectUniqueName": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
       "projectName": "FrameVioti",
-      "projectPath": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+      "projectPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
       "packagesPath": "C:\\Users\\viniv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viniv\\source\\PessoalSpec\\FrameViotiSpecflow\\obj\\",
+      "outputPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
