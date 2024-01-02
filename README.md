@@ -3,7 +3,8 @@
 ## Solução utilizando Specflow+Selenium+Nunit com geração de evidências e Report
 
 - Baixe o projeto na sua máquina. 
-- Instale o Nuget e Specflow caso não tenha ainda
+- Instale o Nuget caso não tenha ainda
+- Instale o Specflow caso não tenha ainda (Para perfeito funcionamento, instale no Visual Studio via Marketplace)
 - Abra o projeto com o Visual Studio
 - Abra a Solução Frame`Front.sln
 - Compile a solução
