@@ -13,10 +13,12 @@
           "ExtentReports.signed": "3.1.3",
           "Faker.Net": "2.0.154",
           "FluentAssertions": "6.11.0",
+          "Gherkin": "28.0.0",
           "Microsoft.NET.Test.Sdk": "17.6.1",
           "NPOI": "2.6.0",
           "NUnit3TestAdapter": "4.5.0",
           "Selenium.WebDriver": "4.9.1",
+          "SpecFlow": "3.9.74",
           "SpecFlow.NUnit": "3.9.74",
           "SpecFlow.Plus.LivingDocPlugin": "3.9.57",
           "WebDriverManager": "2.16.2",
@@ -131,11 +133,11 @@
           }
         }
       },
-      "Gherkin/19.0.3": {
+      "Gherkin/28.0.0": {
         "runtime": {
-          "lib/netstandard2.0/Gherkin.dll": {
-            "assemblyVersion": "19.0.3.0",
-            "fileVersion": "19.0.3.0"
+          "lib/net6.0/Gherkin.dll": {
+            "assemblyVersion": "28.0.0.0",
+            "fileVersion": "28.0.0.0"
           }
         }
       },
@@ -154,7 +156,7 @@
         "runtime": {
           "lib/itextsharp.dll": {
             "assemblyVersion": "5.5.13.3",
-            "fileVersion": "5.5.13.3"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -480,12 +482,12 @@
           "runtimes/win-x64/nativeassets/netcoreapp2.2/aspnetcorev2_inprocess.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "12.2.18316.0"
+            "fileVersion": "0.0.0.0"
           },
           "runtimes/win-x86/nativeassets/netcoreapp2.2/aspnetcorev2_inprocess.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "12.2.18316.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1577,7 +1579,7 @@
       "SpecFlow/3.9.74": {
         "dependencies": {
           "BoDi": "1.5.0",
-          "Gherkin": "19.0.3",
+          "Gherkin": "28.0.0",
           "Microsoft.Extensions.DependencyModel": "1.0.3",
           "SpecFlow.Internal.Json": "1.0.8",
           "System.Configuration.ConfigurationManager": "6.0.0",
@@ -2698,12 +2700,12 @@
       "path": "fluentassertions/6.11.0",
       "hashPath": "fluentassertions.6.11.0.nupkg.sha512"
     },
-    "Gherkin/19.0.3": {
+    "Gherkin/28.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
-      "path": "gherkin/19.0.3",
-      "hashPath": "gherkin.19.0.3.nupkg.sha512"
+      "sha512": "sha512-RsIevG96W02Y0J/ALX93vzoB3Y33q2KcuJOUZiWmqyEl2CZEpa8T0xTL9hiL9LOj0iXqhm+kk4GKHwyuxgTsNQ==",
+      "path": "gherkin/28.0.0",
+      "hashPath": "gherkin.28.0.0.nupkg.sha512"
     },
     "HtmlAgilityPack/1.4.9.5": {
       "type": "package",

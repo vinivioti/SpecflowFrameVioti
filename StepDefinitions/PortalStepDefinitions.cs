@@ -99,7 +99,7 @@ namespace FrameVioti.StepDefinitions
             prodPage.ClicarCheckout();
         }
 
-        [When(@"preencho os dados de minhas informações continuando")]
+        [When(@"preencho os dados de minhas informaÃ§Ãµes continuando")]
         public void WhenPreenchoOsDadosDeMinhasInformacoesContinuando()
         {
             prodPage.PreencheDados();

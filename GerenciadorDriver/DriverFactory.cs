@@ -5,7 +5,10 @@ using OpenQA.Selenium.Firefox;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 
+
+
 namespace FrameVioti.GerenciadorDriver
+
 {
     public class DriverFactory
     {
@@ -13,9 +16,9 @@ namespace FrameVioti.GerenciadorDriver
 
         private DriverFactory() { }
 
-        public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
-       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Firefox)
-       // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
+        // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Chrome)
+        // public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Firefox)
+         public static IWebDriver GetDriver(BrowserType browserType = BrowserType.Edge)
         {
             if (driver == null)
             {
@@ -23,10 +26,15 @@ namespace FrameVioti.GerenciadorDriver
                 {
                     case BrowserType.Chrome:
                         new DriverManager().SetUpDriver(new ChromeConfig());
-                        ChromeOptions chromeOptions = new ChromeOptions();
-                        // chromeOptions.AddArgument("--headless"); // Adicione esse argumento para executar em modo headless (sem abrir a janela do navegador)
-                        driver = new ChromeDriver(chromeOptions);
+                        driver = new ChromeDriver();
                         break;
+
+                    //  case BrowserType.Chrome:
+                    //      new DriverManager().SetUpDriver(new ChromeConfig());
+                    //      ChromeOptions chromeOptions = new ChromeOptions();
+                    // chromeOptions.AddArgument("--headless"); // Adicione esse argumento para executar em modo headless (sem abrir a janela do navegador)
+                    //      driver = new ChromeDriver(chromeOptions);
+                    //      break;
 
                     case BrowserType.Edge:
                         new DriverManager().SetUpDriver(new EdgeConfig());
@@ -64,4 +72,7 @@ namespace FrameVioti.GerenciadorDriver
         Edge,
         Firefox
     }
+
 }
+
+

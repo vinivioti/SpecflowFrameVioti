@@ -156,15 +156,15 @@
           }
         }
       },
-      "Gherkin/19.0.3": {
+      "Gherkin/28.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Gherkin.dll": {
+          "lib/net6.0/Gherkin.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Gherkin.dll": {
+          "lib/net6.0/Gherkin.dll": {
             "related": ".xml"
           }
         }
@@ -4466,18 +4466,20 @@
         "lib/netstandard2.1/FluentAssertions.xml"
       ]
     },
-    "Gherkin/19.0.3": {
-      "sha512": "kq9feqMojMj9aABrHb/ABEPaH2Y4dSclseSahAru6qxCeqVQNLLTgw/6vZMauzI1yBUL2fz03ub5yEd5btLfvg==",
+    "Gherkin/28.0.0": {
+      "sha512": "RsIevG96W02Y0J/ALX93vzoB3Y33q2KcuJOUZiWmqyEl2CZEpa8T0xTL9hiL9LOj0iXqhm+kk4GKHwyuxgTsNQ==",
       "type": "package",
-      "path": "gherkin/19.0.3",
+      "path": "gherkin/28.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "cucumber-mark-green-128.png",
-        "gherkin.19.0.3.nupkg.sha512",
+        "gherkin.28.0.0.nupkg.sha512",
         "gherkin.nuspec",
-        "lib/net45/Gherkin.dll",
-        "lib/net45/Gherkin.xml",
+        "lib/net462/Gherkin.dll",
+        "lib/net462/Gherkin.xml",
+        "lib/net6.0/Gherkin.dll",
+        "lib/net6.0/Gherkin.xml",
         "lib/netstandard2.0/Gherkin.dll",
         "lib/netstandard2.0/Gherkin.xml"
       ]
@@ -11709,10 +11711,12 @@
       "ExtentReports.signed >= 3.1.3",
       "Faker.Net >= 2.0.154",
       "FluentAssertions >= 6.11.0",
+      "Gherkin >= 28.0.0",
       "Microsoft.NET.Test.Sdk >= 17.6.1",
       "NPOI >= 2.6.0",
       "NUnit3TestAdapter >= 4.5.0",
       "Selenium.WebDriver >= 4.9.1",
+      "SpecFlow >= 3.9.74",
       "SpecFlow.NUnit >= 3.9.74",
       "SpecFlow.Plus.LivingDocPlugin >= 3.9.57",
       "WebDriverManager >= 2.16.2",
@@ -11721,31 +11725,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\viniv\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/vinssiusvioti/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+      "projectUniqueName": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj",
       "projectName": "FrameVioti",
-      "projectPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
-      "packagesPath": "C:\\Users\\viniv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\obj\\",
+      "projectPath": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj",
+      "packagesPath": "/Users/vinssiusvioti/.nuget/packages/",
+      "outputPath": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\viniv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/vinssiusvioti/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11784,6 +11782,10 @@
             "target": "Package",
             "version": "[6.11.0, )"
           },
+          "Gherkin": {
+            "target": "Package",
+            "version": "[28.0.0, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.6.1, )"
@@ -11799,6 +11801,10 @@
           "Selenium.WebDriver": {
             "target": "Package",
             "version": "[4.9.1, )"
+          },
+          "SpecFlow": {
+            "target": "Package",
+            "version": "[3.9.74, )"
           },
           "SpecFlow.NUnit": {
             "target": "Package",
@@ -11837,7 +11843,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
       }
     }
   },

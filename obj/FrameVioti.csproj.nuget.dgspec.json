@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj": {}
+    "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj": {
+    "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
+        "projectUniqueName": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj",
         "projectName": "FrameVioti",
-        "projectPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\FrameVioti.csproj",
-        "packagesPath": "C:\\Users\\viniv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\viniv\\source\\1.PessoalSpec\\FrameViotiSpecflow\\obj\\",
+        "projectPath": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/FrameVioti.csproj",
+        "packagesPath": "/Users/vinssiusvioti/.nuget/packages/",
+        "outputPath": "/Users/vinssiusvioti/Desktop/AutomacaoTestes/SpecflowFrameVioti/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\viniv\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/vinssiusvioti/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -64,6 +59,10 @@
               "target": "Package",
               "version": "[6.11.0, )"
             },
+            "Gherkin": {
+              "target": "Package",
+              "version": "[28.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.1, )"
@@ -79,6 +78,10 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.9.1, )"
+            },
+            "SpecFlow": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             },
             "SpecFlow.NUnit": {
               "target": "Package",
@@ -117,7 +120,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.311/RuntimeIdentifierGraph.json"
         }
       }
     }

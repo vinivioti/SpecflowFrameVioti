@@ -1,5 +1,6 @@
 ﻿using FrameVioti.Elementos;
 using FrameVioti.GerenciadorDriver;
+using FrameVioti.Support;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace FrameVioti.Pages
     [Binding]
     public class LoginPage : LoginElementos
     {
-
+        private BasePage bp = new BasePage();
 
         public LoginPage()
         {
@@ -22,36 +23,40 @@ namespace FrameVioti.Pages
 
         public LoginPage UserLogin()
         {
-            DriverFactory.GetDriver().FindElement(GetYuser()).SendKeys("performance_glitch_user");
+            bp.LimparEPreencherCampo(GetYuser(), "performance_glitch_user");
+            // DriverFactory.GetDriver().FindElement(GetYuser()).SendKeys("performance_glitch_user");
             return this;
         }
 
         public LoginPage Userpassword()
         {
-            DriverFactory.GetDriver().FindElement(GetPassword()).SendKeys("secret_sauce");
+            bp.LimparEPreencherCampo(GetPassword(), "secret_sauce");
+            // DriverFactory.GetDriver().FindElement(GetPassword()).SendKeys("secret_sauce");
             return this;
         }
 
         public LoginPage UserWrongLogin()
         {
-            DriverFactory.GetDriver().FindElement(GetWrongYuser()).SendKeys("usuarioInexistente");
+            bp.LimparEPreencherCampo(GetWrongYuser(), "usuarioInexistente");
+            // DriverFactory.GetDriver().FindElement(GetWrongYuser()).SendKeys("usuarioInexistente");
             return this;
         }
-       
+
         public LoginPage UserWrongpassword()
         {
-            DriverFactory.GetDriver().FindElement(GetWrongPassword()).SendKeys("senhaInvalida");
+            bp.LimparEPreencherCampo(GetWrongPassword(), "senhaInvalida");
+            //  DriverFactory.GetDriver().FindElement(GetWrongPassword()).SendKeys("senhaInvalida");
             return this;
         }
 
         public LoginPage BotaoLogin()
         {
-
-           DriverFactory.GetDriver().FindElement(GetBotaoLogin()).Click();
+            bp.AguardarClickElemento(GetBotaoLogin()).Click();
+            // DriverFactory.GetDriver().FindElement(GetBotaoLogin()).Click();
             return this;
         }
 
-         
+
     }
 }
 

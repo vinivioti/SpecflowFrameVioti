@@ -14,7 +14,7 @@ namespace FrameVioti.Elementos
         private By opcaoZA = By.XPath("//option[@value='za']");
         private By produtoTshirtRed = By.XPath("//button[@name='add-to-cart-test.allthethings()-t-shirt-(red)']");
         private By carrinhoCompras = By.XPath("//a[@class='shopping_cart_link']");
-        private By btnCheckout = By.XPath("//button[@class='btn btn_action btn_medium checkout_button']");
+        private By btnCheckout = By.XPath("//button[@id='checkout']");
         private By firstName = By.XPath("//input[@id='first-name']");
         private By lastName = By.XPath("//input[@id='last-name']");
         private By zipCode = By.XPath("//input[@id='postal-code']");
