@@ -61,7 +61,7 @@ namespace FrameVioti.Pages
             Thread.Sleep(2000);
             bp.LimparEPreencherCampo(GetFirstName(), Faker.Name.First());
 
-            bp.LimparEPreencherCampo(GetLastName(), Faker.Name.Middle());
+            bp.LimparEPreencherCampo(GetLastName(), Faker.Name.Middle() + Faker.Name.Last());
 
             bp.LimparEPreencherCampo(GetZipCode(), Faker.Address.ZipCode());
 
