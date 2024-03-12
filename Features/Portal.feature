@@ -27,7 +27,7 @@
     When escolho um produto
     When clico no carrinho de compras 
     When clico no checkout
-    When preencho os dados de minhas informações continuando
+    When preencho os dados de minhas informacoes continuando
     When clico em Finish
     Then o sistema apresenta mensagem Thank you for your order!
     
