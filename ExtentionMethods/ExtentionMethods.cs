@@ -40,12 +40,13 @@ namespace FrameVioti.ExtentionMethods
             // se não existir exception então pega a mensagem de erro do ScenarioContext.Current
             if (error.InnerException == null)
             {
-                CreateScenario(extent, stepDefinitionType).Error(error.Message);
+                CreateScenario(extent, stepDefinitionType).Fail(error.Message);
             }
             else
             {
-                // senão cria uma falha passando a exception
-                CreateScenario(extent, stepDefinitionType).Fail(error.InnerException);
+                // Se houver exceção interna, pegue a mensagem de erro dela
+            var errorMessage = error.InnerException.Message;
+            CreateScenario(extent, stepDefinitionType).Fail(errorMessage);
             }
         }
 
