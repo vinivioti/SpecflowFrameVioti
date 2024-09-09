@@ -35,8 +35,8 @@ namespace FrameVioti.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Site de testes online", "  Como um analista ,\n  Quero efetuar consultas no site de testes online \n  Para q" +
-                    "ue tenhamos visão se o teste está funcionando corretamente", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Site de testes online", "  Como um analista ,\r\n  Quero efetuar consultas no site de testes online \r\n  Para" +
+                    " que tenhamos visão se o teste está funcionando corretamente", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -185,7 +185,7 @@ namespace FrameVioti.Features
     testRunner.When("clico no checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 30
-    testRunner.When("preencho os dados de minhas informações continuando", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When("preencho os dados de minhas informacoes continuando", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 31
     testRunner.When("clico em Finish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

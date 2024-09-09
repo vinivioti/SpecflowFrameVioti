@@ -13,5 +13,7 @@
 		<PackageReference Include="WebDriverManager" Version="2.16.2" />
 		<PackageReference Include="Faker.Net" Version="2.0.154" />
 		<PackageReference Include="iTextSharp" Version="5.5.13.3" />
+		<PackageReference Include="DinkToPdf" Version="1.0.8" />
+
 	</ItemGroup>
 </Project>
