@@ -25,7 +25,7 @@ Vioti<br/>
   
   ### Diário de Melhorias efetuadas no projeto ###
 
-** **09/09/2024** ** - Atualização classes Hooks, ExtentionMethods e PrintaTela para que o Report possa ser gerado com evidências de teste fixados. Quando enviar o Report, as evidências não se perderão.
+** **09/09/2024** ** - Atualização classes Hooks, ExtentionMethods e PrintaTela para que o Report possa ser gerado com evidências de teste fixados. Quando enviar o Report, as evidências não se perderão.<br/>
 ** **31/05/2023** ** - Atualização da classe DriverFactory:<br/>
 - Agora pode ser utilizado os navegadores Chrome, Firefox e Edge nas execução dos testes. <br/>
 - Atualização da classe PrintaTela para suportar os novos navegadores no momento de capturar imagens.<br/>   
